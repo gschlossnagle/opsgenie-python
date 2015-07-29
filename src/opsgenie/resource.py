@@ -1,4 +1,7 @@
-from urllib.parse import urljoin
+try:
+  from urllib.parse import urljoin
+except ImportError:
+  from urlparsr import urljoin
 
 class BaseResource:
     """Provides a common base for resource classes
